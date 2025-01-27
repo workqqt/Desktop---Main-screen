@@ -80,7 +80,6 @@ body {
     z-index: 1; /* Уровень слоя */
 }
 
-
 .newspaper {
     width: 300px;
     height: 300px;
@@ -129,8 +128,8 @@ body {
     width: 99px;
     height: 28px;
     position: absolute;
-    top: 740px; /* Относительно белого квадрата */
-    left: 525px; /* Относительно белого квадрата */
+    top: 650px; /* Относительно белого квадрата */
+    left: 515px; /* Относительно белого квадрата */
     gap: 10px;
     opacity: 1; /* Изменено для видимости */
     font-family: 'Play', sans-serif;
@@ -151,8 +150,8 @@ body {
     width: 71px;
     height: 28px;
     position: absolute;
-    top: 503px; /* Относительно белого квадрата */
-    left: 1005px; /* Относительно белого квадрата */
+    top: 650px; /* Относительно белого квадрата */
+    left: 1000px; /* Относительно белого квадрата */
     gap: 0px;
     opacity: 1; /* Изменено для видимости */
     font-family: 'Play', sans-serif;
@@ -168,4 +167,24 @@ body {
     justify-content: center;
     z-index: 3; /* Уровень слоя */
 }
-
+.text-news {
+    width: 99px;
+    height: 28px;
+    position: absolute;
+    top: 650px; 
+    left: 515px; 
+    gap: 10px;
+    opacity: 1; 
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.77px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
