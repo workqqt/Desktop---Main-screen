@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Обрезка содержимого, выходящего за пределы экрана */
+}
+
+.rectangle {
+    width: 1600px;
+    height: 900px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    opacity: 1;
+    position: relative;
+    overflow: hidden; /* Обрезка содержимого, выходящего за пределы контейнера */
+}
+
+.odna-poloca {
+    width: 540.35px;
+    height: 585.04px;
+    position: absolute;
+    top: 430.77px;
+    left: 11.23px;
+    opacity: 0.5;
+    transform: rotate(0deg) scale(1.05);
+    border-top: 3px solid #D0D0D0;
+    pointer-events: none;
+    border: none;
+    background: none;
+}
+
+.mnogo-poloc {
+    width: 908.46px;
+    height: 605.5px;
+    position: absolute;
+    top: 340.77px;
+    left: -187.99px;
+    opacity: 0.5;
+    transform: rotate(0deg) scale(0.87);
+    border-top: 1px solid #D0D0D0;
+    pointer-events: none;
+    border: none;
+    background: none;
+}
+
+.logo-button {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    left: 710px;
+    opacity: 1; /* Элемент видим */
+    pointer-events: none;
+}
+
+.rectangle1 {
+    width: 440px;
+    height: 600px;
+    position: absolute;
+    top: 183px;
+    left: 340px;
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    background: radial-gradient(75% 50% at 50% 50%, #F8F8F8 0%, #F4F4F4 100%);
+    z-index: 1; /* Уровень слоя */
+}
+
+.rectangle2 {
+    width: 440px;
+    height: 600px;
+    position: absolute;
+    top: 183px;
+    left: 820px;
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    background: radial-gradient(75% 50% at 50% 50%, #F8F8F8 0%, #F4F4F4 100%);
+    z-index: 1; /* Уровень слоя */
+}
+
+
+.newspaper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 322px; /* Относительно белого квадрата */
+    left: 410px; /* Относительно белого квадрата */
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    z-index: 2; /* Уровень слоя */
+}
+
+.newspaper-shadow {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 324px; /* Относительно белого квадрата */
+    left: 410px; /* Относительно белого квадрата */
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    z-index: 1; /* Уровень слоя */
+}
+
+.key {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 322px; /* Относительно белого квадрата */
+    left: 890px; /* Относительно белого квадрата */
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    z-index: 2; /* Уровень слоя */
+}
+
+.key-shadow {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 324px; /* Относительно белого квадрата */
+    left: 890px; /* Относительно белого квадрата */
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    z-index: 1; /* Уровень слоя */
+}
+
+.text-news {
+    width: 99px;
+    height: 28px;
+    position: absolute;
+    top: 740px; /* Относительно белого квадрата */
+    left: 525px; /* Относительно белого квадрата */
+    gap: 10px;
+    opacity: 1; /* Изменено для видимости */
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.77px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000; /* Цвет текста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Уровень слоя */
+}
+
+.text-login {
+    width: 71px;
+    height: 28px;
+    position: absolute;
+    top: 503px; /* Относительно белого квадрата */
+    left: 1005px; /* Относительно белого квадрата */
+    gap: 0px;
+    opacity: 1; /* Изменено для видимости */
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.77px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000; /* Цвет текста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Уровень слоя */
+}
+
