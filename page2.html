@@ -14,14 +14,31 @@
         <img src="image/odna_poloca.svg" class="odna-poloca" alt="One Poloca">
         <img src="image/mnogo_poloc.svg" class="mnogo-poloc" alt="Mnogo Poloc">
         <div class="yellow_rectangle"> <!-- жёлтый квадрат-->
-            
-
+            <form class="auth-form">
+                <h2>Авторизация</h2>
+                <label for="login">Логин / E-Mail</label>
+                <input type="text" id="login" name="login" required>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <div class="remember-forgot">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Запомнить меня</label>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit">Авторизация</button>
+                <div class="register-link">
+                    <p>Нет аккаунта? <a href="#">Регистрация</a></p>
+                </div>
+            </form>
         </div>
         <div class="rectangle3"> <!-- белый квадрат-->
+            <div class="back-button">
+                <img src="/image/strelka.svg" alt="Back Icon" class="back-icon">
+                <div class="back-text">Назад</div>
+            </div>
             <img src="image/BG_Texture.svg" class="bg_texture" alt="BG Texture">
             <img src="image/key.svg" class="key" alt="Key">
             <img src="image/key_shadow.svg" class="key-shadow" alt="Key Shadow">
-        
         </div>
         <img src="image/logo_button_default.svg" class="logo-button" alt="Logo Button">
     </div>
