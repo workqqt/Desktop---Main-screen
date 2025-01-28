@@ -18,6 +18,7 @@
         <div class="rectangle2" id="rectangle2"></div>
         <img src="image/newspaper.svg" class="newspaper" alt="Newspaper">
         <img src="image/newspaper_shadow.svg" class="newspaper-shadow" alt="Newspaper Shadow">
+        <div class="click-overlay" id="clickOverlay"></div>
         <img src="image/key.svg" class="key" alt="Key">
         <img src="image/key_shadow.svg" class="key-shadow" alt="Key Shadow">
         <div class="text-news">Новости</div>
@@ -26,7 +27,7 @@
         <div class="gray-login goldman-bold">LOGIN</div>
     </div>
     <script>
-        document.getElementById('rectangle2').addEventListener('click', function() {
+        document.getElementById('clickOverlay').addEventListener('click', function() {
             window.location.href = 'page2.html';
         });
     </script>

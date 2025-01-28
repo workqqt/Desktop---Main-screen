@@ -79,38 +79,40 @@ body {
     background: radial-gradient(#F8F8F8, #F4F4F4);
     z-index: 1;
     cursor: pointer;
+    position: relative;
 }
 
 .click-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 183px;
+    left: 820px;
+    width: 440px;
+    height: 600px;
     z-index: 10;
     background: transparent;
+    cursor: pointer;
 }
 
 .newspaper {
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 322px; 
-    left: 410px; 
+    top: 322px;
+    left: 410px;
     gap: 0px;
-    opacity: 1; 
-    z-index: 2; 
+    opacity: 1;
+    z-index: 2;
 }
 
 .newspaper-shadow {
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 324px; 
-    left: 410px; 
+    top: 324px;
+    left: 410px;
     gap: 0px;
-    opacity: 1; 
-    z-index: 1; 
+    opacity: 1;
+    z-index: 1;
 }
 
 .key {
@@ -161,10 +163,10 @@ body {
     width: 71px;
     height: 28px;
     position: absolute;
-    top: 650px; 
-    left: 1000px; 
+    top: 650px;
+    left: 1000px;
     gap: 0px;
-    opacity: 1; 
+    opacity: 1;
     font-family: 'Play', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -172,11 +174,11 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #000000; 
+    color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3; 
+    z-index: 3;
 }
 
 .goldman-regular {
