@@ -29,7 +29,7 @@ body {
     background: radial-gradient(#F8F8F8, #F4F4F4);
     z-index: 1;
     overflow: hidden;
-    position: relative; /* Добавлено для относительного позиционирования */
+    position: relative; 
 }
 
 .yellow_rectangle {
@@ -53,17 +53,17 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 5px; /* Внутренние отступы */
+    padding: 0px 5px; 
     gap: 5px 10px;
     isolation: isolate;
-    position: absolute; /* Абсолютное позиционирование */
-    width: 125px; /* Ширина кнопки */
-    height: 40px; /* Высота кнопки */
-    background: #F6CB0E; /* Цвет фона */
+    position: absolute; 
+    width: 125px; 
+    height: 40px; 
+    background: #F6CB0E; 
     z-index: 0;
     cursor: pointer;
-    border-radius: 0; /* Прямые углы */
-    transform: translate(274px, 20px); /* Добавлено для перемещения */
+    border-radius: 0; 
+    transform: translate(274px, 20px); 
 }
 
 .back-icon {
@@ -75,7 +75,7 @@ body {
 }
 
 .back-text {
-    width: auto; /* Обновлено значение */
+    width: auto; 
     height: 19px;
     font-family: 'Play', sans-serif;
     font-style: normal;
@@ -93,7 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; /* Добавлено для отступа от кнопки */
+    margin-top: 20px; 
 }
 
 .auth-form h2 {
