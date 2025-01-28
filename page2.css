@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Goldman', sans-serif;
 }
 
 .rectangle {
@@ -28,17 +29,170 @@ body {
     background: radial-gradient(#F8F8F8, #F4F4F4);
     z-index: 1;
     overflow: hidden;
+    position: relative; /* Добавлено для относительного позиционирования */
 }
 
-.yellow_rectangle { 
-    visibility: visible; 
-    width: 440px; 
-    height: 600px; 
+.yellow_rectangle {
+    visibility: visible;
+    width: 440px;
+    height: 600px;
     position: absolute;
     top: 183px;
-    left: 800px; 
-    opacity: 1; 
-    background: radial-gradient(#FDD722 0%, #F2C505 100%); 
+    left: 800px;
+    opacity: 1;
+    background: radial-gradient(#FDD722 0%, #F2C505 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.back-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px; /* Внутренние отступы */
+    gap: 5px 10px;
+    isolation: isolate;
+    position: absolute; /* Абсолютное позиционирование */
+    width: 125px; /* Ширина кнопки */
+    height: 40px; /* Высота кнопки */
+    background: #F6CB0E; /* Цвет фона */
+    z-index: 0;
+    cursor: pointer;
+    border-radius: 0; /* Прямые углы */
+    transform: translate(274px, 20px); /* Добавлено для перемещения */
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 3;
+    z-index: 3;
+}
+
+.back-text {
+    width: auto; /* Обновлено значение */
+    height: 19px;
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 4;
+    z-index: 4;
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+}
+
+.input-field {
+    position: relative;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 10px; /* Позиционирование иконки внутри поля ввода */
+    pointer-events: none; /* Иконка не мешает вводу текста */
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Добавлено для учета иконки */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.auth-form input[type="text"]::placeholder,
+.auth-form input[type="password"]::placeholder {
+    color: #D0D0D0;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+}
+
+.remember-forgot {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-forgot label {
+    font-size: 14px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.remember-forgot a {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.auth-form button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    background-color: #202020;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+}
+
+.register-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.register-link p {
+    font-size: 14px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.register-link a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
 }
 
 .bg_texture {
@@ -63,7 +217,6 @@ body {
     left: 710px;
     opacity: 1;
     pointer-events: none;
-    
 }
 
 .odna-poloca {
@@ -99,10 +252,10 @@ body {
     height: 496px;
     position: absolute;
     top: 40px;
-    left: -187.99px; 
+    left: -187.99px;
     gap: 0px;
-    opacity: 1; 
-    z-index: 2; 
+    opacity: 1;
+    z-index: 2;
 }
 
 .key-shadow {
@@ -112,7 +265,6 @@ body {
     top: 44px;
     left: -187.99px;
     gap: 0px;
-    opacity: 1; 
-    z-index: 1; 
+    opacity: 1;
+    z-index: 1;
 }
-
