@@ -6,7 +6,6 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    font-family: 'Goldman', sans-serif;
 }
 
 .rectangle {
@@ -29,170 +28,17 @@ body {
     background: radial-gradient(#F8F8F8, #F4F4F4);
     z-index: 1;
     overflow: hidden;
-    position: relative; /* Добавлено для относительного позиционирования */
 }
 
-.yellow_rectangle {
-    visibility: visible;
-    width: 440px;
-    height: 600px;
+.yellow_rectangle { 
+    visibility: visible; 
+    width: 440px; 
+    height: 600px; 
     position: absolute;
     top: 183px;
-    left: 800px;
-    opacity: 1;
-    background: radial-gradient(#FDD722 0%, #F2C505 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    box-sizing: border-box;
-    gap: 40px;
-}
-
-.back-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 5px; /* Внутренние отступы */
-    gap: 5px 10px;
-    isolation: isolate;
-    position: absolute; /* Абсолютное позиционирование */
-    width: 125px; /* Ширина кнопки */
-    height: 40px; /* Высота кнопки */
-    background: #F6CB0E; /* Цвет фона */
-    z-index: 0;
-    cursor: pointer;
-    border-radius: 0; /* Прямые углы */
-    transform: translate(274px, 20px); /* Добавлено для перемещения */
-}
-
-.back-icon {
-    width: 24px;
-    height: 24px;
-    flex: none;
-    order: 3;
-    z-index: 3;
-}
-
-.back-text {
-    width: auto; /* Обновлено значение */
-    height: 19px;
-    font-family: 'Play', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    flex: none;
-    order: 4;
-    z-index: 4;
-}
-
-.auth-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.auth-form h2 {
-    margin-bottom: 20px;
-    font-size: 32px;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-}
-
-.input-field {
-    position: relative;
-    width: calc(100% - 40px);
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.input-icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 10px; /* Позиционирование иконки внутри поля ввода */
-    pointer-events: none; /* Иконка не мешает вводу текста */
-}
-
-.auth-form input[type="text"],
-.auth-form input[type="password"] {
-    width: 100%;
-    padding: 10px 10px 10px 40px; /* Добавлено для учета иконки */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background: #FFFFFF;
-    box-sizing: border-box;
-}
-
-.auth-form input[type="text"]::placeholder,
-.auth-form input[type="password"]::placeholder {
-    color: #D0D0D0;
-    font-family: 'Play', sans-serif;
-    font-size: 16px;
-}
-
-.remember-forgot {
-    width: calc(100% - 40px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.remember-forgot label {
-    font-size: 14px;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-.remember-forgot a {
-    font-size: 14px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.auth-form button {
-    width: calc(100% - 40px);
-    padding: 10px;
-    background-color: #202020;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-}
-
-.register-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.register-link p {
-    font-size: 14px;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin: 0;
-}
-
-.register-link a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
+    left: 800px; 
+    opacity: 1; 
+    background: radial-gradient(75% 50% at 50% 50%, #FDD722 0%, #F2C505 100%);
 }
 
 .bg_texture {
@@ -252,10 +98,10 @@ body {
     height: 496px;
     position: absolute;
     top: 40px;
-    left: -187.99px;
+    left: -187.99px; 
     gap: 0px;
-    opacity: 1;
-    z-index: 2;
+    opacity: 1; 
+    z-index: 2; 
 }
 
 .key-shadow {
@@ -265,6 +111,371 @@ body {
     top: 44px;
     left: -187.99px;
     gap: 0px;
-    opacity: 1;
+    opacity: 1; 
+    z-index: 1; 
+}
+
+.special-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px 0px 20px;
+    gap: 5px;
+    position: absolute;
+    max-width: 127px;
+    width: auto;
+    height: 40px;
+    left: 653px;
+    top: 203px;
+    background: #FDD722;
+    color: #FFFFFF;
+    font-family: 'Play';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.51px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.special-button:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.special-button:hover .icon {
+    filter: invert(0);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    z-index: 3;
+    filter: invert(1); 
+}
+
+.text {
+    width: 48px;
+    height: 19px;
+    font-family: 'Play';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    gap: 0px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    z-index: 4;
+}
+
+.auth-title {
+    width: 360px;
+    height: 37px;
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37,02px;
+    color: #000000;
+    position: absolute;
+    top: 125px;  
+    left: 40px; 
+    z-index: 2;
+}
+
+.login-title {
+    position: absolute;
+    width: 435px;
+    height: 154px;
+    left: -56px;
+    top: 64px;
+    font-family: 'Goldman', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 153,6px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 2px #F2C505; 
     z-index: 1;
+}
+/*Форма где Login, Pass, Запомни меня, Забыл пароль, Авторизация*/
+.input_log_pass {
+    width: 360px;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    padding: 10px;
+    position: relative;
+    top: 202px;
+    left: 40px;
+    z-index: 5;
+    overflow: hidden;
+    
+}
+
+/*Логин E-Mail*/
+.input-container {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 360px;
+    height: 40px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 0.5px solid transparent; 
+    transition: border-color 0.3s ease; 
+    cursor: pointer; 
+}
+
+.input-container:hover {
+    border-bottom: 0.5px solid #202020; 
+}
+
+.input-icon {
+    width: 14.3px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 14.85px;
+    opacity: 1;
+}
+
+.input-container:hover .input-icon {
+    color: #FDD722; 
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    top: -2px;
+    left: 43px;
+    transition: color 0.3s ease; 
+}
+
+.input-field::placeholder {
+    color: #D0D0D0; 
+    transition: color 0.3s ease; 
+}
+
+.input-container:hover .input-field::placeholder {
+    color: #FDD722; 
+}
+
+.input-container:focus-within {
+    border-color: #F2C505; 
+}
+
+/*Форма Пароль*/
+.password-container {
+    display: flex;
+    align-items: center;
+    top: 60px; 
+    left: 0px;
+    width: 360px;
+    height: 40px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 0.5px solid transparent; 
+    transition: border-color 0.3s ease; 
+    cursor: pointer;
+}
+
+.password-container:hover {
+    border-bottom: 0.5px solid #202020; 
+}
+
+.password-container:hover .input-icon {
+    color: #FDD722; 
+}
+
+.password-container:hover .input-field::placeholder {
+    color: #FDD722; 
+}
+
+.input-icon {
+    width: 14.3px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 14.85px;
+    opacity: 1;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    top: -2px;
+    left: 43px;
+    transition: color 0.3s ease; 
+}
+
+.input-field::placeholder {
+    color: #D0D0D0; 
+    transition: color 0.3s ease; 
+}
+
+.password-container:focus-within {
+    border-color: #F2C505; 
+}
+
+/*Запомни меня + Забыли пароль*/
+.remember-forgot-container {
+    width: 360px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+}
+
+.remember-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 24px;
+    opacity: 1;
+    margin-left: -4px; 
+}
+
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+}
+
+.checkbox-text {
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    white-space: nowrap; 
+}
+
+
+.forgot-password {
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.forgot-password:hover {
+    color: #000000; 
+}
+
+.remember-forgot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 360px;
+}
+
+/* Кнопка "Авторизация" */
+.auth-button {
+    position: absolute; 
+    top: 164px; 
+    left: 108px; 
+    width: 143px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    width: 100%; 
+    height: 100%; 
+    background-color: #202020; 
+    color: #FFFFFF; 
+    font-family: 'Play', sans-serif; 
+    font-size: 16px; 
+    font-weight: 550; 
+    text-align: center; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.login-button:hover {
+    background-color: #FFFFFF; 
+    color: #000000; 
+}
+
+
+/* Контейнер для текста "Нет аккаунта?" и кнопки "Регистрация"*/
+.account-info {
+    position: absolute; 
+    top: 456px; 
+    left: 108.5px; 
+    width: 223px; 
+    height: 19px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 1;
+}
+
+/* Текст "Нет аккаунта?" */
+.no-account-text {
+    width: 113px; /* Ширина текста */
+    height: 19px; /* Высота текста */
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.51px;
+    text-align: left;
+    color: #FFFFFF; /* Белый цвет текста */
+    opacity: 1;
+}
+
+/* Кнопка "Регистрация" */
+.register-link {
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.51px;
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: 1;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: #000000;  
 }

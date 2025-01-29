@@ -10,41 +10,70 @@
     <link rel="stylesheet" href="page2.css">
 </head>
 <body>
-    <div class="rectangle"> <!-- сам прямоугольник 1600 на 900-->
+    <div class="rectangle">
         <img src="image/odna_poloca.svg" class="odna-poloca" alt="One Poloca">
         <img src="image/mnogo_poloc.svg" class="mnogo-poloc" alt="Mnogo Poloc">
-        <div class="yellow_rectangle"> <!-- жёлтый квадрат-->
-            <form class="auth-form">
-                <h2>Авторизация</h2>
-                <div class="input-field">
-                    <img src="image/chelovechek.svg" alt="Login Icon" class="input-icon">
-                    <input type="text" id="login" name="login" placeholder="Логин / E-Mail" required>
-                </div>
-                <div class="input-field">
-                    <img src="image/zamok.svg" alt="Password Icon" class="input-icon">
-                    <input type="password" id="password" name="password" placeholder="Пароль" required>
-                </div>
-                <div class="remember-forgot">
-                    <input type="checkbox" id="remember" name="remember">
-                    <label for="remember">Запомнить меня</label>
-                    <a href="#">Забыли пароль?</a>
-                </div>
-                <button type="submit">Авторизация</button>
-                <div class="register-link">
-                    <p>Нет аккаунта? <a href="#">Регистрация</a></p>
-                </div>
-            </form>
+        <div class="special-button">
+            <img src="image/icon_left.svg" class="icon" alt="Arrow Left">
+            <div class="text">Назад</div>
         </div>
-        <div class="rectangle3"> <!-- белый квадрат-->
-            <div class="back-button">
-                <img src="/image/strelka.svg" alt="Back Icon" class="back-icon">
-                <div class="back-text">Назад</div>
+        <div class="yellow_rectangle">
+            <div class="auth-title">Авторизация</div>
+            <div class="login-title">LOGIN</div>
+            <div class="input_log_pass">
+                <div class="input-container">
+                    <img src="image/icon_user.svg" class="input-icon" alt="Login Icon">
+                    <input type="text" class="input-field" placeholder="Логин / E-Mail" id="login-input">
+                </div>
+                <div class="password-container">
+                    <img src="image/icon_locker.svg" class="input-icon" alt="Password Icon">
+                    <input type="password" class="input-field" placeholder="Пароль" id="password-input">
+                </div>
+                <div class="remember-forgot-container">
+                    <div class="remember-checkbox">
+                        <input type="checkbox" id="remember-me" class="checkbox">
+                        <label for="remember-me" class="checkbox-text">Запомнить меня</label>
+                    </div>
+                    <a href="#" class="forgot-password">Забыли пароль?</a>  
+                </div>
+                <div class="auth-button">
+                    <button class="login-button">Авторизация</button>
+                </div>
             </div>
+            <div class="account-info">
+                <div class="no-account-text">Нет аккаунта?</div>
+                <a href="#" class="register-link">Регистрация</a>
+            </div>
+        </div>
+        <div class="rectangle3">
             <img src="image/BG_Texture.svg" class="bg_texture" alt="BG Texture">
             <img src="image/key.svg" class="key" alt="Key">
             <img src="image/key_shadow.svg" class="key-shadow" alt="Key Shadow">
         </div>
         <img src="image/logo_button_default.svg" class="logo-button" alt="Logo Button">
     </div>
+
+    <script>
+        /*Скрыть Логин / E-Mail*/
+        const inputField = document.getElementById('login-input');
+        inputField.addEventListener('focus', () => {
+            inputField.placeholder = ''; 
+        });
+        inputField.addEventListener('blur', () => {
+            if (inputField.value === '') {
+                inputField.placeholder = 'Логин / E-Mail'; 
+            }
+        });
+        /*Скрыть текст Пароль*/
+        const passwordField = document.getElementById('password-input');
+        passwordField.addEventListener('focus', () => {
+            passwordField.placeholder = ''; 
+        });
+        passwordField.addEventListener('blur', () => {
+            if (passwordField.value === '') {
+                passwordField.placeholder = 'Пароль'; 
+            }
+        });
+    </script>
 </body>
 </html>
