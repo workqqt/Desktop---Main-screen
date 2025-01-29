@@ -34,7 +34,7 @@
                         <input type="checkbox" id="remember-me" class="checkbox">
                         <label for="remember-me" class="checkbox-text">Запомнить меня</label>
                     </div>
-                    <a href="#" class="forgot-password">Забыли пароль?</a>  
+                    <a href="#" class="forgot-password">Забыли пароль?</a>
                 </div>
                 <div class="auth-button">
                     <button class="login-button">Авторизация</button>
@@ -53,27 +53,6 @@
         <img src="image/logo_button_default.svg" class="logo-button" alt="Logo Button">
     </div>
 
-    <script>
-        /*Скрыть Логин / E-Mail*/
-        const inputField = document.getElementById('login-input');
-        inputField.addEventListener('focus', () => {
-            inputField.placeholder = ''; 
-        });
-        inputField.addEventListener('blur', () => {
-            if (inputField.value === '') {
-                inputField.placeholder = 'Логин / E-Mail'; 
-            }
-        });
-        /*Скрыть текст Пароль*/
-        const passwordField = document.getElementById('password-input');
-        passwordField.addEventListener('focus', () => {
-            passwordField.placeholder = ''; 
-        });
-        passwordField.addEventListener('blur', () => {
-            if (passwordField.value === '') {
-                passwordField.placeholder = 'Пароль'; 
-            }
-        });
-    </script>
+    <script src="script_lp.js"></script>
 </body>
 </html>
